@@ -10,10 +10,6 @@ function RegistrationPage(){
     const [recycleDate, setRecycleDate] = useState("");
     const [numRoommates, setNumRoommates] = useState("");
     const [emails, setEmails] = useState<string[]>([]);
-
-    // const handleNumRoommates = (e: React.BaseSyntheticEvent) => {
-    //     setNumRoommates(e.target.value);
-    // }
     
     const handleRoommateEmailChange = (e: React.BaseSyntheticEvent, index:number) => {
         const newEmails: string[] = [...emails];
